@@ -2,14 +2,28 @@ body {
   background: darkgray;
 }
 
-.section {
-  background: url(./images/child.jpg) no-repeat ;
+@mixin title-style-black() {
+  font-size: 40px;
+  font-family: "American Typewriter", Times, serif;
+  color: #4d4e59;
+  margin-bottom: 20px;
+}
+
+@mixin title-style-white() {
+  font-size: 40px;
+  font-family: "American Typewriter", Times, serif;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.onlineSection {
+  background: url(./images/child.jpg) no-repeat;
   padding: 100px;
   background-size: 100% 600px;
-  height: 600px;
+  height: 400px;
 
   div {
-    color: #fff;  
+    color: #fff;
     margin: 100px auto;
     width: 80%;
     text-align: center;
@@ -33,12 +47,33 @@ body {
 
   span:nth-child(1) {
     display: block;
-    font-size: 40px;
-    font-family: "American Typewriter", Times, serif;
-    margin-bottom: 20px;
+    @include title-style-white();
   }
 
   a:nth-child(2) {
     margin-right: 20px;
+  }
+}
+
+.missionSection {
+  background: #fcf9f4;
+  text-align: center;
+  padding: 100px;
+
+  div:nth-child(1) {
+    @include title-style-black();
+  }
+
+  div:nth-child(2) {
+    color: #636471;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  a {
+    background: #ffcd62;
+    color: #636471;
+    padding: 10px 60px;
+    border-radius: 3px;
   }
 }
