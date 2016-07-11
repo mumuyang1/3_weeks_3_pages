@@ -23,6 +23,43 @@ body {
   border-radius: 3px;
 }
 
+@mixin standard-section($backgroundColor,$imageBackgroundColor) {
+
+  background-color: $backgroundColor;
+  padding: 100px;
+  color: #fff;
+
+  .message {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    margin-left: 100px;
+  }
+
+  .message div:nth-child(1) {
+    @include title-style-white();
+  }
+
+  .message div:nth-child(2) {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-left: 250px;
+    display: inline-block;
+    background-color: rgba(131, 146, 150, 0.5);
+  }
+
+  a {
+    @include standard-button();
+  }
+}
+
 .onlineSection {
   background: url(./images/child.jpg) no-repeat;
   padding: 100px;
@@ -85,40 +122,8 @@ body {
   }
 }
 
-.studentSection {
-  background-color: #91d0b1;
-  padding: 100px;
-  color: #fff;
-
-  .message {
-    display: inline-block;
-    text-align: left;
-    width: 300px;
-    margin-left: 100px;
-  }
-
-  .message div:nth-child(1) {
-    @include title-style-white();
-  }
-
-  .message div:nth-child(2) {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-
-  .alarmImage {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    vertical-align: bottom;
-    margin-left: 250px;
-    display: inline-block;
-    background-color: #76ad92;
-  }
-
-  a {
-    @include standard-button();
-  }
+.studentsSection.standard {
+  @include standard-section(#91d0b1, #76ad92);
 }
 
 .prospectiveSection {
@@ -156,5 +161,8 @@ body {
     display: inline-block;
     background-color: #deb256;
   }
+}
 
+.partnersSection.standard {
+  @include standard-section(#80a8cc, red);
 }
