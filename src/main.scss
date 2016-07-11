@@ -61,10 +61,12 @@ body {
 }
 
 .onlineSection {
-  background: url(./images/child.jpg) no-repeat;
   padding: 100px;
   background-size: 100% 600px;
   height: 400px;
+
+  background-image: linear-gradient(rgba(187, 187, 187, 0.3), rgba(187, 187, 187, 0.3)),
+  url('./images/child.jpg');
 
   overflow: auto;
   div {
@@ -209,4 +211,11 @@ body {
     margin-right: 0;
     color: #80a8cc;
   }
+}
+
+.footer {
+  background: #4d4e59;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
 }
