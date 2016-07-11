@@ -17,7 +17,7 @@ body {
 }
 
 @mixin standard-button() {
-  background: rgba(131, 146, 150, 0.5);
+  background: rgba(131, 146, 150, 0.3);
   color: #fff;
   padding: 10px 60px;
   border-radius: 3px;
@@ -98,8 +98,7 @@ body {
   }
 
   .message div:nth-child(1) {
-    font-size: 40px;
-    margin-bottom: 20px;
+    @include title-style-white();
   }
 
   .message div:nth-child(2) {
@@ -118,6 +117,44 @@ body {
   }
 
   a {
-    @include standard-button()
+    @include standard-button();
   }
+}
+
+.prospectiveSection {
+  background-color: #ffcd62;
+  padding: 100px;
+  color: #fff;
+  text-align: center;
+
+  .message {
+    text-align: left;
+    display: inline-block;
+    width: 300px;
+
+    div:nth-child(1) {
+      @include title-style-white();
+    }
+
+    div:nth-child(2) {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    a {
+      @include standard-button();
+    }
+
+  }
+
+  .issueImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-left: 100px;
+    display: inline-block;
+    background-color: #deb256;
+  }
+
 }
