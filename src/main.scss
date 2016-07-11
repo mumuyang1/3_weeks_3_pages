@@ -23,7 +23,7 @@ body {
   border-radius: 3px;
 }
 
-@mixin standard-section($backgroundColor,$imageBackgroundColor) {
+@mixin standard-section($backgroundColor) {
 
   background-color: $backgroundColor;
   padding: 100px;
@@ -66,6 +66,7 @@ body {
   background-size: 100% 600px;
   height: 400px;
 
+  overflow: auto;
   div {
     color: #fff;
     margin: 100px auto;
@@ -123,7 +124,7 @@ body {
 }
 
 .studentsSection.standard {
-  @include standard-section(#91d0b1, #76ad92);
+  @include standard-section(#91d0b1);
 }
 
 .prospectiveSection {
@@ -149,7 +150,6 @@ body {
     a {
       @include standard-button();
     }
-
   }
 
   .issueImage {
@@ -164,5 +164,49 @@ body {
 }
 
 .partnersSection.standard {
-  @include standard-section(#80a8cc, red);
+  @include standard-section(#80a8cc);
+}
+
+.progressSection {
+  background: #fcf9f4;
+  text-align: center;
+  padding: 100px;
+  overflow: auto;
+
+  .title {
+    @include title-style-black();
+    margin-bottom: 60px;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+  li {
+    float: left;
+    border: 1px solid #d9ddde;
+    padding: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+
+    div:nth-child(1) {
+      font-size: 60px;
+      margin-bottom: 40px;
+    }
+  }
+
+  li:nth-child(1) {
+    color: #91d0b1;
+  }
+
+  li:nth-child(2) {
+    color: #ffcd62;
+  }
+
+  li:nth-child(3) {
+    margin-right: 0;
+    color: #80a8cc;
+  }
 }
