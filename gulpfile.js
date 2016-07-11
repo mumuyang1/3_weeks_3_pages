@@ -13,7 +13,7 @@ gulp.task('images', function () {
     .pipe(gulp.dest('./dist/images'));
 });
 
-gulp.task('serve', ['images', 'sass'],function() {
+gulp.task('server', ['images', 'sass'],function() {
   //2. serve at custom port
   var server = gls.static('./', 3030);
   // var server = gls('./', true, 3030);
@@ -24,3 +24,5 @@ gulp.task('serve', ['images', 'sass'],function() {
     server.notify.apply(server, [file]);
   });
 });
+
+gulp.task('default', ['server']);
