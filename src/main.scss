@@ -16,6 +16,13 @@ body {
   margin-bottom: 20px;
 }
 
+@mixin standard-button() {
+  background: rgba(131, 146, 150, 0.5);
+  color: #fff;
+  padding: 10px 60px;
+  border-radius: 3px;
+}
+
 .onlineSection {
   background: url(./images/child.jpg) no-repeat;
   padding: 100px;
@@ -75,5 +82,42 @@ body {
     color: #636471;
     padding: 10px 60px;
     border-radius: 3px;
+  }
+}
+
+.studentSection {
+  background-color: #91d0b1;
+  padding: 100px;
+  color: #fff;
+
+  .message {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    margin-left: 100px;
+  }
+
+  .message div:nth-child(1) {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .message div:nth-child(2) {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .alarmImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-left: 250px;
+    display: inline-block;
+    background-color: #76ad92;
+  }
+
+  a {
+    @include standard-button()
   }
 }
