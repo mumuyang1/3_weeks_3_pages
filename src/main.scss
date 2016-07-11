@@ -1,3 +1,44 @@
 body {
-	background: firebrick;
+  background: darkgray;
+}
+
+.section {
+  background: url(./images/child.jpg) no-repeat ;
+  padding: 100px;
+  background-size: 100% 600px;
+  height: 600px;
+
+  div {
+    color: #fff;  
+    margin: 100px auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .button {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    width: 140px;
+  }
+
+  a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  span:nth-child(1) {
+    display: block;
+    font-size: 40px;
+    font-family: "American Typewriter", Times, serif;
+    margin-bottom: 20px;
+  }
+
+  a:nth-child(2) {
+    margin-right: 20px;
+  }
 }
