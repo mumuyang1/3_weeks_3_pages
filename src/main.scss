@@ -21,6 +21,7 @@ body {
   color: #fff;
   padding: 10px 60px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 @mixin standard-section($backgroundColor) {
@@ -60,7 +61,7 @@ body {
   }
 }
 
-.header {
+header {
   background: #fcf9f4;
   text-align: center;
 
@@ -119,7 +120,7 @@ body {
     text-align: center;
   }
 
-  .button {
+  a {
     border: 1px solid white;
     border-radius: 3px;
     padding: 10px 20px;
@@ -127,12 +128,17 @@ body {
     color: white;
     display: inline-block;
     width: 140px;
-  }
+    cursor: pointer;
 
-  a:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.5);
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:nth-child(2) {
+      margin-right: 20px;
+    }
   }
 
   span:nth-child(1) {
@@ -140,9 +146,6 @@ body {
     @include title-style-white();
   }
 
-  a:nth-child(2) {
-    margin-right: 20px;
-  }
 }
 
 .missionSection {
@@ -165,6 +168,7 @@ body {
     color: #636471;
     padding: 10px 60px;
     border-radius: 3px;
+    cursor: pointer;
   }
 }
 
@@ -227,33 +231,35 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: center;
-  }
 
-  li {
-    float: left;
-    border: 1px solid #d9ddde;
-    padding: 100px;
-    border-radius: 5px;
-    margin-right: 20px;
+    li {
+      float: left;
+      border: 1px solid #d9ddde;
+      padding: 100px;
+      border-radius: 5px;
+      margin-right: 20px;
+      cursor: pointer;
 
-    div:nth-child(1) {
-      font-size: 60px;
-      margin-bottom: 40px;
+      div:nth-child(1) {
+        font-size: 60px;
+        margin-bottom: 40px;
+      }
+
+      &:nth-child(1) {
+        color: #91d0b1;
+      }
+
+      &:nth-child(2) {
+        color: #ffcd62;
+      }
+
+      &:nth-child(3) {
+        margin-right: 0;
+        color: #80a8cc;
+      }
     }
   }
 
-  li:nth-child(1) {
-    color: #91d0b1;
-  }
-
-  li:nth-child(2) {
-    color: #ffcd62;
-  }
-
-  li:nth-child(3) {
-    margin-right: 0;
-    color: #80a8cc;
-  }
 }
 
 .footer {
