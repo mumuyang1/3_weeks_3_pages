@@ -1,11 +1,13 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var gls = require('gulp-live-server');
+var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function () {
   return gulp.src('./src/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('images', function () {
@@ -18,6 +20,10 @@ gulp.task('server', ['images', 'sass'],function() {
   var server = gls.static('./', 3030);
   // var server = gls('./', true, 3030);
   server.start();
+
+  browserSync.init({
+    server: server
+  });
 
   //use gulp.watch to trigger server actions(notify, start or stop)
   gulp.watch(['./src/*.scss', './index.html', './src/images/***'], ['sass'], ['images'], function (file) {
