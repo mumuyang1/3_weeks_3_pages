@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var gls = require('gulp-live-server');
 var browserSync = require('browser-sync').create();
+var fontAwesome = require('node-font-awesome');
 
 gulp.task('sass', function () {
   return gulp.src('./src/*.scss')
@@ -10,12 +11,17 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('font-awesome', function() {
+  gulp.src(fontAwesome.css)
+      .pipe(gulp.dest('./dist/font-awesome/css'));
+});
+
 gulp.task('images', function () {
   return gulp.src('./src/images/*.jpg')
     .pipe(gulp.dest('./dist/images'));
 });
 
-gulp.task('server', ['images', 'sass'],function() {
+gulp.task('server', function() {
   //2. serve at custom port
   var server = gls.static('./', 3030);
   // var server = gls('./', true, 3030);
@@ -31,4 +37,4 @@ gulp.task('server', ['images', 'sass'],function() {
   });
 });
 
-gulp.task('default', ['server']);
+gulp.task('default', ['font-awesome','images', 'sass','server']);
