@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 40px 20%;
+}
+
+.menu {
+  margin-top: 35px;
+  list-style-type: none;
+
+  .menu_item {
+    margin-bottom: 10px;
+
+    .fa {
+      width: 20px;
+      margin-right: 10px;
+      color: black;
+    }
+
+    color: #3ba190;
+    font-family: cursive;
+  }
+}
