@@ -1,3 +1,7 @@
+body {
+  max-width: 1024px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,20 +12,51 @@
   padding: 40px 20%;
 }
 
-.menu {
-  margin-top: 35px;
-  list-style-type: none;
+.left_side {
+  display: inline-block;
 
-  .menu_item {
-    margin-bottom: 10px;
+  .menu {
+    margin: 35px 0;
+    list-style-type: none;
 
-    .fa {
-      width: 20px;
-      margin-right: 10px;
-      color: black;
+    .menu_item {
+      margin-bottom: 10px;
+
+      .fa {
+        width: 20px;
+        margin-right: 5px;
+        color: black;
+      }
+
+      color: #00A690;
+      font-size: 14px;
+      font-style: italic;
+    }
+  }
+
+  .contact {
+    .contact_title {
+      border-bottom: 1px dashed #CCCCCC;
+      padding: 5px;
+      margin-top: 20px;
     }
 
-    color: #3ba190;
-    font-family: cursive;
+    .contact_content {
+      font-size: 12px;
+      margin: 10px 0;
+      width: 130px;
+      font-style: italic;
+      line-height: 20px;
+    }
+
+    .contact_link {
+      border: 1px solid #EEEEEE;
+      padding: 5px 5px;
+      border-radius: 4px;
+      background-color: white;
+      margin-top: 10px;
+      color: #3BA190;
+      font-style: italic;
+    }
   }
 }
