@@ -1,5 +1,5 @@
 body {
-  max-width: 1024px;
+  max-width: 2048px;
 }
 
 * {
@@ -14,10 +14,13 @@ body {
 
 .left_side {
   display: inline-block;
+  width: 18%;
+  margin-right: 2%;
 
   .menu {
     margin: 35px 0;
     list-style-type: none;
+    line-height: 30px;
 
     .menu_item {
       margin-bottom: 10px;
@@ -39,6 +42,8 @@ body {
       border-bottom: 1px dashed #CCCCCC;
       padding: 5px;
       margin-top: 20px;
+      font-size: 14px;
+      font-weight: normal;
     }
 
     .contact_content {
@@ -57,6 +62,46 @@ body {
       margin-top: 10px;
       color: #3BA190;
       font-style: italic;
+    }
+  }
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.main_content {
+  float: right;
+  width: 80%;
+  clear: both;
+
+  .picture_area {
+    background: url("../images/cakes.jpg") no-repeat;
+    background-size: cover;
+    height: 350px;
+    border: none;
+
+    .message {
+      float: right;
+      clear: both;
+      display: block;
+      padding: 20px;
+      line-height: 0;
+      font-style: italic;
+
+      &.style_white{
+        background-color: white;
+        font-size: 20px;
+        margin-top: 210px;
+      }
+
+      &.style_black {
+        background-color: black;
+        color: white;
+        font-size: 15px;
+      }
     }
   }
 }
