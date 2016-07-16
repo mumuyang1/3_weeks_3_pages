@@ -139,7 +139,7 @@ body {
   .mail_area {
     border-top: 1px dashed #E5E5E5;
     border-bottom: 1px dashed #E5E5E5;
-    margin: 10px 0;
+    margin: 20px 0;
 
     .tip_part {
       width: 50%;
@@ -170,6 +170,56 @@ body {
     .mail_box {
       width: 20%;
       margin: 0 10px 0 15%;
+    }
+  }
+
+  @mixin post-background-image($imageURL) {
+    .post_pic {
+      background: url($imageURL) no-repeat;
+      background-size: cover;
+      height: 100px;
+      border: 1px solid #EEEEEE;
+      background-origin: content-box;
+      padding: 10px;
+    }
+  }
+
+  .post_area {
+    list-style-type: none;
+
+    .post_item {
+      display: inline-block;
+      float: left;
+      width: 23%;
+      margin-right: 2%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .post_pic {
+        background-size: cover;
+        height: 100px;
+        border: 1px solid #EEEEEE;
+        background-origin: content-box;
+        padding: 10px;
+      }
+
+      &.recipes {
+        @include post-background-image("../images/food.jpg")
+      }
+
+      &.join_us {
+        @include post-background-image("../images/website.jpg");
+      }
+
+      &.make_chips {
+        @include post-background-image("../images/chips.jpg");
+      }
+
+      &.cook_book {
+        @include post-background-image("../images/tree.jpg");
+      }
     }
   }
 }
