@@ -135,4 +135,41 @@ body {
       }
     }
   }
+
+  .mail_area {
+    border-top: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed #E5E5E5;
+    margin: 10px 0;
+
+    .tip_part {
+      width: 50%;
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .mail_text {
+      font-size: 10px;
+      font-style: italic;
+    }
+
+    .mail_icon {
+      margin: 10px 10px 10px 0;
+      font-size: 22px;
+      float: left;
+      clear: both;
+      display: inline-block;
+    }
+
+    .mail_btn {
+      padding: 2px 10px;
+      border-radius: 3px;
+      background-color: #E3E2E3;
+      border: 1px solid #CCCCCC;
+      font-weight: bold;
+    }
+    .mail_box {
+      width: 20%;
+      margin: 0 10px 0 15%;
+    }
+  }
 }
