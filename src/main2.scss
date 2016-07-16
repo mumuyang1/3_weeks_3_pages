@@ -9,7 +9,7 @@ body {
 
 .container {
   background-color: white;
-  padding: 40px 20%;
+  padding: 40px 10%;
 }
 
 .left_side {
@@ -66,7 +66,7 @@ body {
   }
 }
 
-.clearfix:after {
+.clear:after {
   content: '';
   display: block;
   clear: both;
@@ -75,7 +75,6 @@ body {
 .main_content {
   float: right;
   width: 80%;
-  clear: both;
 
   .picture_area {
     background: url("../images/cakes.jpg") no-repeat;
@@ -91,7 +90,7 @@ body {
       line-height: 0;
       font-style: italic;
 
-      &.style_white{
+      &.style_white {
         background-color: white;
         font-size: 20px;
         margin-top: 210px;
@@ -101,6 +100,38 @@ body {
         background-color: black;
         color: white;
         font-size: 15px;
+      }
+    }
+  }
+
+  .text_area {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+
+    .text_item {
+      background: #EFF8F7;
+      color: #61BEAE;
+      display: inline-block;
+      width: 25%;
+      box-sizing: border-box;
+      //text-align: left;  Confused about why this way not work. Need to figure out.
+      padding: 20px;
+      border-right: 1px solid #D3EDE9;
+      font-size: 18px;
+      float: left;
+
+      &.active {
+        background-color: #D9EFEC;
+      }
+
+      .content {
+        font-style: italic;
+        font-size: 12px;
+      }
+
+      &:last-child {
+        border-right: none;
       }
     }
   }
