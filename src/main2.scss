@@ -72,6 +72,11 @@ body {
   clear: both;
 }
 
+.standard_title {
+  color: #61BEAE;
+  font-size: 14px;
+}
+
 .main_content {
   float: right;
   width: 80%;
@@ -111,14 +116,12 @@ body {
 
     .text_item {
       background: #EFF8F7;
-      color: #61BEAE;
       display: inline-block;
       width: 25%;
       box-sizing: border-box;
       //text-align: left;  Confused about why this way not work. Need to figure out.
       padding: 20px;
       border-right: 1px solid #D3EDE9;
-      font-size: 18px;
       float: left;
 
       &.active {
@@ -128,6 +131,7 @@ body {
       .content {
         font-style: italic;
         font-size: 12px;
+        color: #61BEAE;
       }
 
       &:last-child {
@@ -190,8 +194,8 @@ body {
     .post_item {
       display: inline-block;
       float: left;
-      width: 23%;
-      margin-right: 2%;
+      width: 22%;
+      margin-right: 4%;
 
       &:last-child {
         margin-right: 0;
@@ -203,6 +207,32 @@ body {
         border: 1px solid #EEEEEE;
         background-origin: content-box;
         padding: 10px;
+      }
+
+      .post_title {
+        margin: 10px 0;
+      }
+      .post_content {
+        font-size: 12px;
+        margin-bottom: 10px;
+        color: #474747;
+      }
+
+      .post_date {
+        color: #A8A8A8;
+        font-size: 10px;
+      }
+
+      .post_btn {
+        color: #61BEAE;
+        border: none;
+        font-size: 10px;
+        cursor: pointer;
+
+        .post_enter {
+          font-size: 8px;
+          font-weight: bold;
+        }
       }
 
       &.recipes {
