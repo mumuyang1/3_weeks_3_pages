@@ -9,7 +9,7 @@ body {
 
 .container {
   background-color: white;
-  padding: 40px 10%;
+  padding: 40px 20%;
 }
 
 .main_content {
@@ -20,8 +20,7 @@ body {
 
 .left_side {
   display: inline-block;
-  width: 18%;
-  margin-right: 2%;
+  width: 16%;
 
   .menu {
     margin: 35px 0;
@@ -50,6 +49,7 @@ body {
       margin-top: 20px;
       font-size: 14px;
       font-weight: normal;
+      width: 70%;
     }
 
     .contact_content {
@@ -85,7 +85,7 @@ body {
 
 .right_side {
   float: right;
-  width: 80%;
+  width: 84%;
 
   .picture_area {
     background: url("../images/cakes.jpg") no-repeat;
@@ -160,7 +160,6 @@ body {
     .mail_text {
       font-size: 10px;
       font-style: italic;
-      line-height: 44px;
     }
 
     .mail_icon {
