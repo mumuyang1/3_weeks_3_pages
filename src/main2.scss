@@ -29,7 +29,8 @@ body {
 
     .menu_item {
       margin-bottom: 10px;
-
+      cursor: pointer;
+      
       .fa {
         width: 20px;
         margin-right: 5px;
@@ -68,6 +69,7 @@ body {
       margin-top: 10px;
       color: #3BA190;
       font-style: italic;
+      cursor: pointer;
     }
   }
 }
@@ -121,11 +123,10 @@ body {
     box-sizing: border-box;
 
     .text_item {
+      list-style: none;
       background: #EFF8F7;
-      display: inline-block;
       width: 25%;
       box-sizing: border-box;
-      //text-align: left;  Confused about why this way not work. Need to figure out.
       padding: 20px;
       border-right: 1px solid #D3EDE9;
       float: left;
