@@ -20,7 +20,8 @@ body {
 
 .left_side {
   display: inline-block;
-  width: 16%;
+  width: 17%;
+  margin-right: 3%;
 
   .menu {
     margin: 35px 0;
@@ -50,7 +51,6 @@ body {
       margin-top: 20px;
       font-size: 14px;
       font-weight: normal;
-      width: 70%;
     }
 
     .contact_content {
@@ -87,7 +87,7 @@ body {
 
 .right_side {
   float: right;
-  width: 84%;
+  width: 80%;
 
   .picture_area {
     background: url("../images/cakes.jpg") no-repeat;
@@ -121,10 +121,11 @@ body {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
+    background: #EFF8F7;
+
 
     .text_item {
       list-style: none;
-      background: #EFF8F7;
       width: 25%;
       box-sizing: border-box;
       padding: 20px;
