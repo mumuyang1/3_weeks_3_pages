@@ -15,6 +15,11 @@ gulp.task('images', function () {
     .pipe(gulp.dest('./dist/images'));
 });
 
+gulp.task('font-awesome', function () {
+  return gulp.src('./node_modules/font-awesome/**/*')
+    .pipe(gulp.dest('./dist/library/font-awesome/'));
+});
+
 gulp.task('server', function() {
   //2. serve at custom port
   var server = gls.static('./', 3030);
@@ -31,4 +36,4 @@ gulp.task('server', function() {
   });
 });
 
-gulp.task('default', ['images', 'sass','server']);
+gulp.task('default', ['images', 'sass', 'font-awesome', 'server']);
