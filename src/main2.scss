@@ -170,16 +170,23 @@ body {
       display: inline-block;
     }
 
+    .subscribe_part {
+      float: right;
+      margin-top: 15px;
+    }
+
     .mail_btn {
       padding: 2px 10px;
       border-radius: 3px;
       background-color: #E3E2E3;
       border: 1px solid #CCCCCC;
       font-weight: bold;
+      margin-right: 20px;
     }
+
     .mail_box {
       width: 20%;
-      margin: 0 10px 0 15%;
+      margin-right: 10px;
     }
   }
 
