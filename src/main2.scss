@@ -1,0 +1,270 @@
+body {
+  max-width: 2048px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 40px 20%;
+}
+
+.main_content {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #EEEEEE;
+  overflow: auto;
+}
+
+button ,a{
+  cursor: pointer;
+}
+
+.left_side {
+  display: inline-block;
+  width: 17%;
+  margin-right: 3%;
+
+  .menu {
+    margin: 35px 0;
+    list-style-type: none;
+    line-height: 30px;
+
+    .menu_item {
+      margin-bottom: 10px;
+      cursor: pointer;
+      
+      .fa {
+        width: 20px;
+        margin-right: 5px;
+        color: black;
+      }
+
+      color: #00A690;
+      font-size: 14px;
+      font-style: italic;
+    }
+  }
+
+  .contact {
+    .contact_title {
+      border-bottom: 1px dashed #CCCCCC;
+      padding: 5px;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    .contact_content {
+      font-size: 12px;
+      margin: 10px 0;
+      width: 130px;
+      font-style: italic;
+      line-height: 20px;
+    }
+
+    .contact_link {
+      border: 1px solid #EEEEEE;
+      padding: 5px 5px;
+      border-radius: 4px;
+      background-color: white;
+      margin-top: 10px;
+      color: #3BA190;
+      font-style: italic;
+    }
+  }
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.standard_title {
+  color: #61BEAE;
+  font-size: 14px;
+}
+
+.right_side {
+  float: right;
+  width: 80%;
+
+  .picture_area {
+    background: url("../images/cakes.jpg") no-repeat;
+    background-size: cover;
+    height: 350px;
+    border: none;
+
+    .message {
+      float: right;
+      clear: both;
+      display: block;
+      padding: 20px;
+      line-height: 0;
+      font-style: italic;
+
+      &.style_white {
+        background-color: white;
+        font-size: 20px;
+        margin-top: 210px;
+      }
+
+      &.style_black {
+        background-color: black;
+        color: white;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .text_area {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    background: #EFF8F7;
+
+
+    .text_item {
+      list-style: none;
+      width: 25%;
+      box-sizing: border-box;
+      padding: 20px;
+      border-right: 1px solid #D3EDE9;
+      float: left;
+
+      &.active {
+        background-color: #D9EFEC;
+      }
+
+      .content {
+        font-style: italic;
+        font-size: 12px;
+        color: #61BEAE;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .mail_area {
+    border-top: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed #E5E5E5;
+    margin: 20px 0;
+
+    .tip_part {
+      width: 50%;
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .mail_text {
+      font-size: 10px;
+      font-style: italic;
+    }
+
+    .mail_icon {
+      margin: 10px 10px 10px 0;
+      font-size: 22px;
+      float: left;
+      clear: both;
+      display: inline-block;
+    }
+
+    .subscribe_part {
+      float: right;
+      margin-top: 15px;
+    }
+
+    .mail_btn {
+      padding: 2px 10px;
+      border-radius: 3px;
+      background-color: #E3E2E3;
+      border: 1px solid #CCCCCC;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .mail_box {
+      width: 20%;
+      margin-right: 10px;
+    }
+  }
+
+  .post_area {
+    list-style-type: none;
+
+    .post_item {
+      display: inline-block;
+      float: left;
+      width: 22%;
+      margin-right: 4%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .post_pic {
+        height: 100px;
+        border: 1px solid #EEEEEE;
+        background-origin: content-box;
+        padding: 8px;
+
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .post_title {
+        margin: 10px 0;
+      }
+      .post_content {
+        max-height: 100px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        color: #474747;
+      }
+
+      .post_date {
+        color: #A8A8A8;
+        font-size: 10px;
+      }
+
+      .post_btn {
+        color: #61BEAE;
+        border: none;
+        font-size: 10px;
+
+        .post_enter {
+          font-size: 8px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  color: #C2C2C2;
+  font-size: 8px;
+  margin-top: 20px;
+
+  .left_links {
+    display: inline-block;
+  }
+  .friend_link {
+    color: #61BEAE;
+    text-decoration: none;
+  }
+
+  .contact_icons {
+    font-size: 18px;
+    float: right;
+  }
+}
+

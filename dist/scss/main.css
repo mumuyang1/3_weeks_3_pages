@@ -1,0 +1,221 @@
+body {
+  background: #6C96C2; }
+
+header {
+  background: #fcf9f4;
+  text-align: center; }
+  header .logo {
+    width: 100px;
+    height: 50px;
+    vertical-align: middle; }
+  header .nav {
+    border-right: 1px solid #e5e1db;
+    border-left: 1px solid #e5e1db;
+    display: inline-block;
+    width: 60%;
+    padding: 10px 10px; }
+    header .nav ul {
+      list-style-type: none;
+      text-align: center;
+      padding: 0; }
+      header .nav ul li {
+        display: inline-block;
+        margin: 0 20px; }
+        header .nav ul li a {
+          text-decoration: none;
+          color: #575765; }
+  header .donateButton {
+    text-decoration: none;
+    border: 1px solid #a9a7a1;
+    border-radius: 4px;
+    padding: 10px 40px;
+    color: #3c3c46;
+    margin-left: 20px; }
+
+.onlineSection {
+  padding: 100px;
+  background-size: 100% 600px;
+  height: 400px;
+  background-image: linear-gradient(rgba(187, 187, 187, 0.3), rgba(187, 187, 187, 0.3)), url("./images/child.jpg");
+  overflow: auto; }
+  .onlineSection div {
+    color: #fff;
+    margin: 100px auto;
+    width: 80%;
+    text-align: center; }
+  .onlineSection a {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    width: 140px;
+    cursor: pointer; }
+    .onlineSection a:hover {
+      background: rgba(255, 255, 255, 0.5);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.5); }
+    .onlineSection a:nth-child(2) {
+      margin-right: 20px; }
+  .onlineSection span:nth-child(1) {
+    display: block;
+    font-size: 40px;
+    font-family: "American Typewriter", Times, serif;
+    color: #fff;
+    margin-bottom: 20px; }
+
+.missionSection {
+  background: #fcf9f4;
+  text-align: center;
+  padding: 100px; }
+  .missionSection div:nth-child(1) {
+    font-size: 40px;
+    font-family: "American Typewriter", Times, serif;
+    color: #4d4e59;
+    margin-bottom: 20px; }
+  .missionSection div:nth-child(2) {
+    color: #636471;
+    font-size: 26px;
+    margin-bottom: 40px; }
+  .missionSection a {
+    background: #ffcd62;
+    color: #636471;
+    padding: 10px 60px;
+    border-radius: 3px;
+    cursor: pointer; }
+
+.studentsSection.standard {
+  background-color: #91d0b1;
+  padding: 100px;
+  color: #fff; }
+  .studentsSection.standard .message {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    margin-left: 100px; }
+  .studentsSection.standard .message div:nth-child(1) {
+    font-size: 40px;
+    font-family: "American Typewriter", Times, serif;
+    color: #fff;
+    margin-bottom: 20px; }
+  .studentsSection.standard .message div:nth-child(2) {
+    font-size: 18px;
+    margin-bottom: 40px; }
+  .studentsSection.standard .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-left: 250px;
+    display: inline-block;
+    background-color: rgba(131, 146, 150, 0.5); }
+  .studentsSection.standard a {
+    background: rgba(131, 146, 150, 0.3);
+    color: #fff;
+    padding: 10px 60px;
+    border-radius: 3px;
+    cursor: pointer; }
+
+.prospectiveSection {
+  background-color: #ffcd62;
+  padding: 100px;
+  color: #fff;
+  text-align: center; }
+  .prospectiveSection .message {
+    text-align: left;
+    display: inline-block;
+    width: 300px; }
+    .prospectiveSection .message div:nth-child(1) {
+      font-size: 40px;
+      font-family: "American Typewriter", Times, serif;
+      color: #fff;
+      margin-bottom: 20px; }
+    .prospectiveSection .message div:nth-child(2) {
+      font-size: 18px;
+      margin-bottom: 40px; }
+    .prospectiveSection .message a {
+      background: rgba(131, 146, 150, 0.3);
+      color: #fff;
+      padding: 10px 60px;
+      border-radius: 3px;
+      cursor: pointer; }
+  .prospectiveSection .issueImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-left: 100px;
+    display: inline-block;
+    background-color: #deb256; }
+
+.partnersSection.standard {
+  background-color: #80a8cc;
+  padding: 100px;
+  color: #fff; }
+  .partnersSection.standard .message {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    margin-left: 100px; }
+  .partnersSection.standard .message div:nth-child(1) {
+    font-size: 40px;
+    font-family: "American Typewriter", Times, serif;
+    color: #fff;
+    margin-bottom: 20px; }
+  .partnersSection.standard .message div:nth-child(2) {
+    font-size: 18px;
+    margin-bottom: 40px; }
+  .partnersSection.standard .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-left: 250px;
+    display: inline-block;
+    background-color: rgba(131, 146, 150, 0.5); }
+  .partnersSection.standard a {
+    background: rgba(131, 146, 150, 0.3);
+    color: #fff;
+    padding: 10px 60px;
+    border-radius: 3px;
+    cursor: pointer; }
+
+.progressSection {
+  background: #fcf9f4;
+  text-align: center;
+  padding: 100px;
+  overflow: auto; }
+  .progressSection .title {
+    font-size: 40px;
+    font-family: "American Typewriter", Times, serif;
+    color: #4d4e59;
+    margin-bottom: 20px;
+    margin-bottom: 60px; }
+  .progressSection ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; }
+    .progressSection ul li {
+      float: left;
+      border: 1px solid #d9ddde;
+      padding: 100px;
+      border-radius: 5px;
+      margin-right: 20px;
+      cursor: pointer; }
+      .progressSection ul li div:nth-child(1) {
+        font-size: 60px;
+        margin-bottom: 40px; }
+      .progressSection ul li:nth-child(1) {
+        color: #91d0b1; }
+      .progressSection ul li:nth-child(2) {
+        color: #ffcd62; }
+      .progressSection ul li:nth-child(3) {
+        margin-right: 0;
+        color: #80a8cc; }
+
+.footer {
+  background: #4d4e59;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px; }
