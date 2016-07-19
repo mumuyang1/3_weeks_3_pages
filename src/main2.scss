@@ -18,6 +18,10 @@ body {
   overflow: auto;
 }
 
+button ,a{
+  cursor: pointer;
+}
+
 .left_side {
   display: inline-block;
   width: 17%;
@@ -69,7 +73,6 @@ body {
       margin-top: 10px;
       color: #3BA190;
       font-style: italic;
-      cursor: pointer;
     }
   }
 }
@@ -192,17 +195,6 @@ body {
     }
   }
 
-  @mixin post-background-image($imageURL) {
-    .post_pic {
-      background: url($imageURL) no-repeat;
-      background-size: cover;
-      height: 100px;
-      border: 1px solid #EEEEEE;
-      background-origin: content-box;
-      padding: 10px;
-    }
-  }
-
   .post_area {
     list-style-type: none;
 
@@ -217,17 +209,22 @@ body {
       }
 
       .post_pic {
-        background-size: cover;
         height: 100px;
         border: 1px solid #EEEEEE;
         background-origin: content-box;
-        padding: 10px;
+        padding: 8px;
+
+        img{
+          height: 100%;
+          width: 100%;
+        }
       }
 
       .post_title {
         margin: 10px 0;
       }
       .post_content {
+        max-height: 100px;
         font-size: 12px;
         margin-bottom: 10px;
         color: #474747;
@@ -242,7 +239,6 @@ body {
         color: #61BEAE;
         border: none;
         font-size: 10px;
-        cursor: pointer;
 
         .post_enter {
           font-size: 8px;
@@ -250,21 +246,6 @@ body {
         }
       }
 
-      &.recipes {
-        @include post-background-image("../images/food.jpg")
-      }
-
-      &.join_us {
-        @include post-background-image("../images/website.jpg");
-      }
-
-      &.make_chips {
-        @include post-background-image("../images/chips.jpg");
-      }
-
-      &.cook_book {
-        @include post-background-image("../images/tree.jpg");
-      }
     }
   }
 }
